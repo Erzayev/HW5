@@ -1,126 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="site.css">
 
-    <title>Document</title>
+    <title>Best Cars WebSite</title>
 </head>
+
 <body>
     <!-- ======================================================================================== -->
-    
-    //======================================
+
+    <!-- ======================================================================================== -->
     <div data-role="page" id="home">
 
-        <!-- header --> 
+        <!-- header -->
         <div data-role="header" data-theme='b'>
-            <h2>math program - home</h2>
-        
-            <div data-role="navbar" data-theme='b'>
-                <ul>
-                <li><a href="#home">Home Page</a></li>
-                <li><a href="#add">Add Page</a></li>
-                <li><a href="#subtract">Subtract Page</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div>  
-        //======================================
-
-        //======================================
-        <!-- content -->
-        <div data-role="content" data-theme='e'>
-            Real application function code
-        </div>
-        //======================================
-
-        //======================================
-          <!-- notes footer --> 
-          <div data-role="footer" data-theme='b'>
-            <h3>Copyrigtht 2023 by Kurt Friedrich</h3>
-        </div>
-        //======================================
-    </div>
-   <!-- ======================================================================================== -->
-
-
-   <!-- ======================================================================================== -->
-    <div data-role="page" id="add">
-        
-        <!-- =================================== -->
-        <!-- header --> 
-        <div data-role="header" data-theme='b'>
-            <h2>math program - add</h2>
+            <h2>Welcome to "Best Cars Catalog" Website</h2>
 
             <div data-role="navbar" data-theme='b'>
                 <ul>
-                 <li><a href="#home">Home Page</a></li>
-                 <li><a href="#add">Add Page</a></li>
-                 <li><a href="#subtract">Subtract Page</a></li>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car</a></li>
+                    <li><a href="#morecars">Add More Cars</a></li>
+                    <li><a href="#catalog">Full Catalog</a></li>
                 </ul>
             </div><!-- /navbar -->
-
         </div>
-        <!-- =================================== -->
+        <!-- ======================================================================================== -->
 
-        <!-- =================================== -->
+        <!-- ======================================================================================== -->
         <!-- content -->
         <div data-role="content" data-theme='e'>
-            Real application function code
+            Here you can find best car type which suits you.
+            <br>
+            <br>
+            Please use "Find Your Car" service to provide us with some details so we can find it suits you best.
+            <br>
+            <br>
+            Also you can help us and add more cars to our Car Catalog by using "Add More Cars" service.
+
         </div>
         <!-- =================================== -->
 
-
         <!-- =================================== -->
-        <!-- notes footer --> 
+        <!-- notes footer -->
         <div data-role="footer" data-theme='b'>
-            <h3>Copyrigtht 2023 by Kurt Friedrich</h3>
+            <h3>Copyrigtht 2023 by Erik R. & Shalom T.</h3>
         </div>
         <!-- =================================== -->
     </div>
-     <!-- ======================================================================================== -->
+    <!-- ======================================================================================== -->
 
 
-    
-      <!-- ======================================================================================== -->
-    <div data-role="page" id="subtract">
-        
-          <!-- =================================== -->
-        <!-- header --> 
+    <!-- ======================================================================================== -->
+    <div data-role="page" id="findcar">
+
+        <!-- =================================== -->
+        <!-- header -->
         <div data-role="header" data-theme='b'>
-            <h2>math program - subtract</h2>
-       
+            <h2>Find Your Car</h2>
 
             <div data-role="navbar" data-theme='b'>
                 <ul>
-                <li><a href="#home">Home Page</a></li>
-                <li><a href="#add">Add Page</a></li>
-                <li><a href="#subtract">Subtract Page</a></li>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car</a></li>
+                    <li><a href="#morecars">Add More Cars</a></li>
+                    <li><a href="#catalog">Full Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            Here you can find the best car which suits you and only you.
+            <br>
+            <br>
+            Please check the button given below so we can find it for you from our Catalog.
+
+            <div id="findcar">
+                <h3>Please choose the Brand:</h3>
+                <input type="radio" id="Audi" name="carbrend" value="Audi" />
+                <label for="Audi">Audi</label>
+                <input type="radio" id="BMW" name="carbrend" value="BMW" />
+                <label for="BMW">BMW</label>
+                <input type="radio" id="Chevrolet" name="carbrend" value="Chevrolet" />
+                <label for="Chevrolet">Chevrolet</label>
+                <input type="radio" id="Hyundai" name="carbrend" value="Hyundai" />
+                <label for="Hyundai">Hyundai</label>
+                <br>
+                <h3>Please choose the Color:</h3>
+                <input type="radio" id="Red" name="carcolor" value="Red" />
+                <label for="Red">Red</label>
+                <input type="radio" id="Blue" name="carcolor" value="Blue" />
+                <label for="Blue">Blue</label>
+                <input type="radio" id="Yellow" name="carcolor" value="Yellow" />
+                <label for="Yellow">Yellow</label>
+                <input type="radio" id="Pink" name="carcolor" value="Pink" />
+                <label for="Pink">Pink</label>
+                <br>
+                <h3>Please choose the Cost:</h3>
+                <input type="radio" id="lowcost" name="price" value="lowcost" />
+                <label for="lowcost">Low Cost</label>
+                <input type="radio" id="avgcost" name="price" value="avgcost" />
+                <label for="avgcost">Average Cost</label>
+                <input type="radio" id="expensive" name="price" value="expensive" />
+                <label for="expensive">Expensive</label>
+                <br>
+                <p id="result">Result is: </p>
+
+            </div>
+
+            <br>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyrigtht 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+    <!-- ======================================================================================== -->
+
+
+
+    <!-- ======================================================================================== -->
+    <div data-role="page" id="morecars">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h2>Add More Cars</h2>
+
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car</a></li>
+                    <li><a href="#morecars">Add More Cars</a></li>
+                    <li><a href="#catalog">Full Catalog</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>
-           <!-- =================================== -->
+        <!-- =================================== -->
 
-          <!-- =================================== -->
+        <!-- =================================== -->
         <!-- content -->
         <div data-role="content" data-theme='e'>
-            Real application function code
+            Here you can add more cars to our Best Cars Catalog.
+            <br>
+            <br>
+            Please use below menu to add a new car.
+            <br>
+            <div id = "addcar">
+                <h2>Please add new car:</h2>
+                <br>
+                <h3>What is the Brand</h3>
+                <input type="text" id="newbrand">
+                <br>
+                <h3>What is the Color</h3>
+                <input type="text" id="newcolor">
+                <br>
+                <h3>What is the Cost</h3>
+                <input type="text" id="newcost">
+                <br>
+                <button id="Add">Add new car</button>
+            </div>
         </div>
-           <!-- =================================== -->
+        <!-- =================================== -->
 
-           <!-- =================================== -->
-        <!-- notes footer --> 
+        <!-- =================================== -->
+        <!-- notes footer -->
         <div data-role="footer" data-theme='b'>
-            <h3>Copyrigtht 2023 by Kurt Friedrich</h3>
+            <h3>Copyrigtht 2023 by Erik R. & Shalom T.</h3>
         </div>
         <!-- =================================== -->
 
     </div>
-     <!-- ======================================================================================== -->
-    
-    
+    <!-- ======================================================================================== -->
+
+
+    <div data-role="page" id="catalog">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h2>Check Whole Catalog</h2>
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#findcar">Find Your Car</a></li>
+                    <li><a href="#morecars">Add More Cars</a></li>
+                    <li><a href="#catalog">Full Catalog</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            Here you can check the whole Catalof of Cars which we have. Just push the Button.
+            
+            <button id="catalogbtn">Button</button>
+            <br>
+            <ul id="showcatalog"> </ul>
+
+            </div>
+
+            <br>
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyrigtht 2023 by Erik R. & Shalom T.</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+    <!-- ======================================================================================== -->
+
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
