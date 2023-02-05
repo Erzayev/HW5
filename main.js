@@ -105,3 +105,14 @@ function image(thisImg) {
     img.src = "images/"+thisImg;
     document.getElementById('CarResultImg').appendChild(img);
 }
+
+//car value loss predictor
+
+function calculateValueLoss() {
+    const initialValue = document.getElementById("initialValue").value;
+    const age = document.getElementById("age").value;
+    const valueLoss = initialValue * (age * 0.01);
+    document.getElementById("valueLoss").innerHTML = valueLoss;
+    const newValue = initialValue - valueLoss;
+    document.getElementById("newValue").innerHTML = newValue;
+  }
