@@ -49,3 +49,59 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById("showall").addEventListener("click", All);
     
 }); 
+
+//pick car if/else statements
+
+if (type = "sedan")
+{
+    if (focus = "low")
+    {
+        image('accord.png')
+    }
+    if (focus = "mid")
+    {
+        image('is300.png')
+    }
+    if (focus = "high")
+    {
+        image('m3.png')
+    }
+}
+else if (type = "suv")
+{
+    if (focus = "low")
+    {
+        image('equinox.png')
+    }
+    if (focus = "mid")
+    {
+        image('q5.png')
+    }
+    if (focus = "high")
+    {
+        image('escalade.png')
+    }
+}
+else if (type = "truck")
+{
+    if (focus = "low")
+    {
+        image('tacoma.png')
+    }
+    if (focus = "mid")
+    {
+        image('f150.png')
+    }
+    if (focus = "high")
+    {
+        image('r1t.png')
+    }
+}
+
+//function to append pictures to results of picked car
+
+function image(thisImg) {
+    let img = document.createElement("IMG");
+    img.src = "images/"+thisImg;
+    document.getElementById('CarResultImg').appendChild(img);
+}
